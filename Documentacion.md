@@ -24,6 +24,10 @@ filtren en el buscador del programa.
 
 ## Alcance
 
+El alcance de este proyecto se extiende ha toda la comunidad de musicos , amantes de los instrumentos musicales,
+coleccionistas de intrumentos y las personas dentro de las soicedades que tengan el interes de poder formar parte de una 
+comunidad que pueda generar lazos y comunicacion sobre el mismo rubro o interes. 
+
 ### Incluye
 - Registro y login de usuarios.
 - Publicación de libros con fotos y descripciones.
@@ -83,7 +87,10 @@ misma por medio del front end para poder obtener y enviar datos.
 ## Primer Backlog (Historias de Usuario)
 
 - **HU01**: Como usuario, quiero registrarme y crear un perfil, para poder utilizar la plataforma.
-- **HU02**: Como usuario, quiero publicar un libro con foto y descripción, para ofrecerlo en venta o intercambio.
-- **HU03**: Como usuario, quiero buscar libros por título o autor, para encontrar lo que necesito fácilmente.
-- **HU04**: Como usuario, quiero enviar mensajes a otros usuarios, para coordinar la compra o intercambio de libros.
-- **HU05**: Como usuario, quiero ver un historial de mis publicaciones y mensajes, para llevar control de mis actividades.
+- **HU02**: Como usuario, quiero publicar un comentario , una experiencia o informacion de un instrumento que desee
+enriquecer en cuanto a informacion valiosa.
+- **HU03**: Como usuario, quiero buscar instrumentos por categoria o tipo de ejecucion, para encontrar lo que 
+quiero ver fácilmente.
+- **HU04**: Como usuario, quiero enviar mensajes a otros usuarios, para poder crear lazos con personas 
+con las que comparta un mismo interes (musical o sobre los instrumentos musicales).
+- **HU05**: Como usuario, quiero ver un historial de mis publicaciones y mensajes, para llevar control de mis actividades y aportes.
