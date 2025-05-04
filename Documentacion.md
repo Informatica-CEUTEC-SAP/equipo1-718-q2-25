@@ -1,10 +1,10 @@
 # Sprint 0 - Documentación del Proyecto
 
 ## Nombre del Proyecto
-"BookHub" - Plataforma de intercambio y venta de libros usados
+"InstrumentalHub" - Catalagos de isntrumentos
 
 ## Enunciado del Proyecto
-Crear una aplicación web que permita a los usuarios vender, comprar e intercambiar libros usados en su ciudad. La plataforma facilitará el contacto entre vendedores y compradores, gestionando publicaciones, búsquedas y mensajes.
+Crear una aplicación web que permita a los usuarios explorar, comparar y conocer diferentes instrumentos musicales. La plataforma ofrecerá catálogos organizados por categorías, fichas técnicas, contenido multimedia y funcionalidades interactivas para fomentar el aprendizaje y la apreciación musical.
 
 ## Objetivos
 
