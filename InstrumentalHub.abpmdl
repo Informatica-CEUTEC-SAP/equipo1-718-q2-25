@@ -1,0 +1,101 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXLiteTheme": {
+      "version": "4.1.1",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account": {
+      "version": "9.1.1",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "9.1.1",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "9.1.1",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "9.1.1",
+      "isInstalled": true
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "9.1.1",
+      "isInstalled": true
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "9.1.1",
+      "isInstalled": true
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "9.1.1",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "InstrumentalHub.Application": {
+      "path": "src/InstrumentalHub.Application/InstrumentalHub.Application.abppkg",
+      "folder": "src"
+    },
+    "InstrumentalHub.Application.Tests": {
+      "path": "test/InstrumentalHub.Application.Tests/InstrumentalHub.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "InstrumentalHub.Domain.Shared": {
+      "path": "src/InstrumentalHub.Domain.Shared/InstrumentalHub.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "InstrumentalHub.Application.Contracts": {
+      "path": "src/InstrumentalHub.Application.Contracts/InstrumentalHub.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "InstrumentalHub.HttpApi": {
+      "path": "src/InstrumentalHub.HttpApi/InstrumentalHub.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "InstrumentalHub.HttpApi.Client": {
+      "path": "src/InstrumentalHub.HttpApi.Client/InstrumentalHub.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "InstrumentalHub.EntityFrameworkCore.Tests": {
+      "path": "test/InstrumentalHub.EntityFrameworkCore.Tests/InstrumentalHub.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "InstrumentalHub.EntityFrameworkCore": {
+      "path": "src/InstrumentalHub.EntityFrameworkCore/InstrumentalHub.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "InstrumentalHub.TestBase": {
+      "path": "test/InstrumentalHub.TestBase/InstrumentalHub.TestBase.abppkg",
+      "folder": "test"
+    },
+    "InstrumentalHub.Domain.Tests": {
+      "path": "test/InstrumentalHub.Domain.Tests/InstrumentalHub.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "InstrumentalHub.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/InstrumentalHub.HttpApi.Client.ConsoleTestApp/InstrumentalHub.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "InstrumentalHub.DbMigrator": {
+      "path": "src/InstrumentalHub.DbMigrator/InstrumentalHub.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "InstrumentalHub.HttpApi.Host": {
+      "path": "src/InstrumentalHub.HttpApi.Host/InstrumentalHub.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "InstrumentalHub.Domain": {
+      "path": "src/InstrumentalHub.Domain/InstrumentalHub.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}
