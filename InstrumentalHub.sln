@@ -3,37 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32611.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoInstrumentosMusicales.Domain", "src\CatalogoInstrumentosMusicales.Domain\CatalogoInstrumentosMusicales.Domain.csproj", "{554AD327-6DBA-4F8F-96F8-81CE7A0C863F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentalHub.Domain", "src\InstrumentalHub.Domain\InstrumentalHub.Domain.csproj", "{554AD327-6DBA-4F8F-96F8-81CE7A0C863F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoInstrumentosMusicales.Application", "src\CatalogoInstrumentosMusicales.Application\CatalogoInstrumentosMusicales.Application.csproj", "{1A94A50E-06DC-43C1-80B5-B662820EC3EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentalHub.Application", "src\InstrumentalHub.Application\InstrumentalHub.Application.csproj", "{1A94A50E-06DC-43C1-80B5-B662820EC3EB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoInstrumentosMusicales.EntityFrameworkCore", "src\CatalogoInstrumentosMusicales.EntityFrameworkCore\CatalogoInstrumentosMusicales.EntityFrameworkCore.csproj", "{C956DD76-69C8-4A9C-83EA-D17DF83340FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentalHub.EntityFrameworkCore", "src\InstrumentalHub.EntityFrameworkCore\InstrumentalHub.EntityFrameworkCore.csproj", "{C956DD76-69C8-4A9C-83EA-D17DF83340FD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CA9AC87F-097E-4F15-8393-4BC07735A5B0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{04DBDB01-70F4-4E06-B468-8F87850B22BE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoInstrumentosMusicales.Application.Tests", "test\CatalogoInstrumentosMusicales.Application.Tests\CatalogoInstrumentosMusicales.Application.Tests.csproj", "{50B2631D-129C-47B3-A587-029CCD6099BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentalHub.Application.Tests", "test\InstrumentalHub.Application.Tests\InstrumentalHub.Application.Tests.csproj", "{50B2631D-129C-47B3-A587-029CCD6099BC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoInstrumentosMusicales.Domain.Shared", "src\CatalogoInstrumentosMusicales.Domain.Shared\CatalogoInstrumentosMusicales.Domain.Shared.csproj", "{42F719ED-8413-4895-B5B4-5AB56079BC66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentalHub.Domain.Shared", "src\InstrumentalHub.Domain.Shared\InstrumentalHub.Domain.Shared.csproj", "{42F719ED-8413-4895-B5B4-5AB56079BC66}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoInstrumentosMusicales.Application.Contracts", "src\CatalogoInstrumentosMusicales.Application.Contracts\CatalogoInstrumentosMusicales.Application.Contracts.csproj", "{520659C8-C734-4298-A3DA-B539DB9DFC0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentalHub.Application.Contracts", "src\InstrumentalHub.Application.Contracts\InstrumentalHub.Application.Contracts.csproj", "{520659C8-C734-4298-A3DA-B539DB9DFC0B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoInstrumentosMusicales.HttpApi", "src\CatalogoInstrumentosMusicales.HttpApi\CatalogoInstrumentosMusicales.HttpApi.csproj", "{4164BDF7-F527-4E85-9CE6-E3C2D7426A27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentalHub.HttpApi", "src\InstrumentalHub.HttpApi\InstrumentalHub.HttpApi.csproj", "{4164BDF7-F527-4E85-9CE6-E3C2D7426A27}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoInstrumentosMusicales.HttpApi.Client", "src\CatalogoInstrumentosMusicales.HttpApi.Client\CatalogoInstrumentosMusicales.HttpApi.Client.csproj", "{3B5A0094-670D-4BB1-BFDD-61B88A8773DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentalHub.HttpApi.Client", "src\InstrumentalHub.HttpApi.Client\InstrumentalHub.HttpApi.Client.csproj", "{3B5A0094-670D-4BB1-BFDD-61B88A8773DC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoInstrumentosMusicales.EntityFrameworkCore.Tests", "test\CatalogoInstrumentosMusicales.EntityFrameworkCore.Tests\CatalogoInstrumentosMusicales.EntityFrameworkCore.Tests.csproj", "{1FE30EB9-74A9-47F5-A9F6-7B1FAB672D81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentalHub.EntityFrameworkCore.Tests", "test\InstrumentalHub.EntityFrameworkCore.Tests\InstrumentalHub.EntityFrameworkCore.Tests.csproj", "{1FE30EB9-74A9-47F5-A9F6-7B1FAB672D81}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoInstrumentosMusicales.TestBase", "test\CatalogoInstrumentosMusicales.TestBase\CatalogoInstrumentosMusicales.TestBase.csproj", "{91853F21-9CD9-4132-BC29-A7D5D84FFFE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentalHub.TestBase", "test\InstrumentalHub.TestBase\InstrumentalHub.TestBase.csproj", "{91853F21-9CD9-4132-BC29-A7D5D84FFFE7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoInstrumentosMusicales.Domain.Tests", "test\CatalogoInstrumentosMusicales.Domain.Tests\CatalogoInstrumentosMusicales.Domain.Tests.csproj", "{E512F4D9-9375-480F-A2F6-A46509F9D824}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentalHub.Domain.Tests", "test\InstrumentalHub.Domain.Tests\InstrumentalHub.Domain.Tests.csproj", "{E512F4D9-9375-480F-A2F6-A46509F9D824}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoInstrumentosMusicales.HttpApi.Client.ConsoleTestApp", "test\CatalogoInstrumentosMusicales.HttpApi.Client.ConsoleTestApp\CatalogoInstrumentosMusicales.HttpApi.Client.ConsoleTestApp.csproj", "{EF480016-9127-4916-8735-D2466BDBC582}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentalHub.HttpApi.Client.ConsoleTestApp", "test\InstrumentalHub.HttpApi.Client.ConsoleTestApp\InstrumentalHub.HttpApi.Client.ConsoleTestApp.csproj", "{EF480016-9127-4916-8735-D2466BDBC582}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoInstrumentosMusicales.DbMigrator", "src\CatalogoInstrumentosMusicales.DbMigrator\CatalogoInstrumentosMusicales.DbMigrator.csproj", "{70680696-BB1E-4383-BCB2-42C3767171FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentalHub.DbMigrator", "src\InstrumentalHub.DbMigrator\InstrumentalHub.DbMigrator.csproj", "{70680696-BB1E-4383-BCB2-42C3767171FB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogoInstrumentosMusicales.HttpApi.Host", "src\CatalogoInstrumentosMusicales.HttpApi.Host\CatalogoInstrumentosMusicales.HttpApi.Host.csproj", "{96E5259E-59A3-4FAF-BCD1-5BF8E74EF82C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstrumentalHub.HttpApi.Host", "src\InstrumentalHub.HttpApi.Host\InstrumentalHub.HttpApi.Host.csproj", "{96E5259E-59A3-4FAF-BCD1-5BF8E74EF82C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
