@@ -272,3 +272,6 @@ src/InstrumentalHub.Blazor.Server.Tiered/Logs/*
 # IdentityServer temp files
 tempkey.rsa
 tempkey.jwk
+
+# Mac
+.DS_Store
