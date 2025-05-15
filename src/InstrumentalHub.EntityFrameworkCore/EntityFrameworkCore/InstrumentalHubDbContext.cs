@@ -1,3 +1,4 @@
+using InstrumentalHub.Domain;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
@@ -25,7 +26,7 @@ public class InstrumentalHubDbContext :
     ITenantManagementDbContext,
     IIdentityDbContext
 {
-    /* Add DbSet properties for your Aggregate Roots / Entities here. */
+    public DbSet<InstrumentoCategoria> InstrumentoCategorias { get; set; }
 
 
     #region Entities from the modules
@@ -87,5 +88,6 @@ public class InstrumentalHubDbContext :
         //    b.ConfigureByConvention(); //auto configure for the base class props
         //    //...
         //});
+        
     }
 }
