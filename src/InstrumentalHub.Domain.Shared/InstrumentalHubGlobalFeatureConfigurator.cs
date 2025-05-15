@@ -9,6 +9,11 @@ public static class InstrumentalHubGlobalFeatureConfigurator
 
     public static void Configure()
     {
+        GlobalFeatureManager.Instance.Modules.CmsKit(cmsKit =>
+        {
+            cmsKit.EnableAll();
+        });
+        
         OneTimeRunner.Run(() =>
         {
                 /* You can configure (enable/disable) global features of the used modules here.
