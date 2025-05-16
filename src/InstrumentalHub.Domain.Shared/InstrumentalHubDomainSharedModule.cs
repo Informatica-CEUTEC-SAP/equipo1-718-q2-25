@@ -13,6 +13,7 @@ using Volo.Abp.VirtualFileSystem;
 using Volo.Abp.OpenIddict;
 using Volo.Abp.BlobStoring.Database;
 using Volo.Abp.TenantManagement;
+using Volo.CmsKit;
 
 namespace InstrumentalHub;
 
@@ -27,7 +28,8 @@ namespace InstrumentalHub;
     typeof(AbpTenantManagementDomainSharedModule),
     typeof(BlobStoringDatabaseDomainSharedModule)
     )]
-public class InstrumentalHubDomainSharedModule : AbpModule
+[DependsOn(typeof(CmsKitDomainSharedModule))]
+    public class InstrumentalHubDomainSharedModule : AbpModule
 {
     public override void PreConfigureServices(ServiceConfigurationContext context)
     {

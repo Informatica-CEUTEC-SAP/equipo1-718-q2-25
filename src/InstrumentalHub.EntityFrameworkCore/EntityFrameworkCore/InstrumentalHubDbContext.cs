@@ -15,6 +15,7 @@ using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.OpenIddict.EntityFrameworkCore;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
+using Volo.CmsKit.EntityFrameworkCore;
 
 namespace InstrumentalHub.EntityFrameworkCore;
 
@@ -65,29 +66,29 @@ public class InstrumentalHubDbContext :
     }
 
     protected override void OnModelCreating(ModelBuilder builder)
-    {
-        base.OnModelCreating(builder);
+{
+    base.OnModelCreating(builder);
 
-        /* Include modules to your migration db context */
+    /* Include modules to your migration db context */
 
-        builder.ConfigurePermissionManagement();
-        builder.ConfigureSettingManagement();
-        builder.ConfigureBackgroundJobs();
-        builder.ConfigureAuditLogging();
-        builder.ConfigureFeatureManagement();
-        builder.ConfigureIdentity();
-        builder.ConfigureOpenIddict();
-        builder.ConfigureTenantManagement();
-        builder.ConfigureBlobStoring();
-        
-        /* Configure your own tables/entities inside here */
+    builder.ConfigurePermissionManagement();
+    builder.ConfigureSettingManagement();
+    builder.ConfigureBackgroundJobs();
+    builder.ConfigureAuditLogging();
+    builder.ConfigureFeatureManagement();
+    builder.ConfigureIdentity();
+    builder.ConfigureOpenIddict();
+    builder.ConfigureTenantManagement();
+    builder.ConfigureBlobStoring();
+    builder.ConfigureCmsKit(); // ← Agregado desde la rama main
 
-        //builder.Entity<YourEntity>(b =>
-        //{
-        //    b.ToTable(InstrumentalHubConsts.DbTablePrefix + "YourEntities", InstrumentalHubConsts.DbSchema);
-        //    b.ConfigureByConvention(); //auto configure for the base class props
-        //    //...
-        //});
-        
-    }
+    /* Configure your own tables/entities inside here */
+
+    //builder.Entity<YourEntity>(b =>
+    //{
+    //    b.ToTable(InstrumentalHubConsts.DbTablePrefix + "YourEntities", InstrumentalHubConsts.DbSchema);
+    //    b.ConfigureByConvention(); //auto configure for the base class props
+    //    //...
+    //});
 }
+
