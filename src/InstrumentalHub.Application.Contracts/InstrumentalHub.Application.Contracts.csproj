@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\InstrumentalHub.Domain.Shared\InstrumentalHub.Domain.Shared.csproj" />
+    <ProjectReference Include="..\InstrumentalHub.Domain\InstrumentalHub.Domain.csproj" />
   </ItemGroup>
   
   <ItemGroup>
@@ -20,6 +21,10 @@
     <PackageReference Include="Volo.Abp.Account.Application.Contracts" Version="9.1.1" />
     <PackageReference Include="Volo.Abp.TenantManagement.Application.Contracts" Version="9.1.1" />
     <PackageReference Include="Volo.CmsKit.Application.Contracts" Version="9.1.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="DTOS\" />
   </ItemGroup>
 
 </Project>
