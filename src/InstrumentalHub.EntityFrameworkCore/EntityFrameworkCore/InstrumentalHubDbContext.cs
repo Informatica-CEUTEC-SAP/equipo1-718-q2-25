@@ -17,6 +17,7 @@ using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.CmsKit.EntityFrameworkCore;
 
+
 namespace InstrumentalHub.EntityFrameworkCore;
 
 [ReplaceDbContext(typeof(IIdentityDbContext))]
@@ -90,5 +91,7 @@ public class InstrumentalHubDbContext :
         //    b.ConfigureByConvention(); //auto configure for the base class props
         //    //...
         //});
+
+        builder.ApplyConfigurationsFromAssembly(typeof(InstrumentalHubDbContext).Assembly);
     }
 }
