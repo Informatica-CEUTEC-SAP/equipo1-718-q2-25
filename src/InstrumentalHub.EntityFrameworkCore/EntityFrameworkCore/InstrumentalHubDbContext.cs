@@ -1,3 +1,4 @@
+using InstrumentalHub.Domain;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
@@ -16,6 +17,7 @@ using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.CmsKit.EntityFrameworkCore;
 
+
 namespace InstrumentalHub.EntityFrameworkCore;
 
 [ReplaceDbContext(typeof(IIdentityDbContext))]
@@ -26,7 +28,7 @@ public class InstrumentalHubDbContext :
     ITenantManagementDbContext,
     IIdentityDbContext
 {
-    /* Add DbSet properties for your Aggregate Roots / Entities here. */
+    public DbSet<InstrumentoCategoria> InstrumentoCategorias { get; set; }
 
 
     #region Entities from the modules
@@ -79,7 +81,8 @@ public class InstrumentalHubDbContext :
         builder.ConfigureOpenIddict();
         builder.ConfigureTenantManagement();
         builder.ConfigureBlobStoring();
-        
+        builder.ConfigureCmsKit(); // ← Agregado desde la rama main
+
         /* Configure your own tables/entities inside here */
 
         //builder.Entity<YourEntity>(b =>
@@ -88,6 +91,7 @@ public class InstrumentalHubDbContext :
         //    b.ConfigureByConvention(); //auto configure for the base class props
         //    //...
         //});
-        builder.ConfigureCmsKit();
-        }
+
+        builder.ApplyConfigurationsFromAssembly(typeof(InstrumentalHubDbContext).Assembly);
+    }
 }
