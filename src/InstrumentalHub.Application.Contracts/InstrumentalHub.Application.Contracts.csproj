@@ -22,9 +22,5 @@
     <PackageReference Include="Volo.Abp.TenantManagement.Application.Contracts" Version="9.1.1" />
     <PackageReference Include="Volo.CmsKit.Application.Contracts" Version="9.1.1" />
   </ItemGroup>
-  
-  <ItemGroup>
-    <Folder Include="DTOS\" />
-  </ItemGroup>
 
 </Project>
