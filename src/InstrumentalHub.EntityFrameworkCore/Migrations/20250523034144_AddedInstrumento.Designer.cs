@@ -13,8 +13,8 @@ using Volo.Abp.EntityFrameworkCore;
 namespace InstrumentalHub.Migrations
 {
     [DbContext(typeof(InstrumentalHubDbContext))]
-    [Migration("20250517034117_AddInstrumento")]
-    partial class AddInstrumento
+    [Migration("20250523034144_AddedInstrumento")]
+    partial class AddedInstrumento
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -40,6 +40,25 @@ namespace InstrumentalHub.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("InstrumentoCategorias");
+                });
+
+            modelBuilder.Entity("InstrumentalHub.Domain.Models.Instrumento", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("CategoriaId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoriaId");
+
+                    b.ToTable("Instrumentos");
                 });
 
             modelBuilder.Entity("Volo.Abp.AuditLogging.AuditLog", b =>
@@ -2728,6 +2747,17 @@ namespace InstrumentalHub.Migrations
                     b.HasIndex("TenantId", "UserName");
 
                     b.ToTable("CmsUsers", (string)null);
+                });
+
+            modelBuilder.Entity("InstrumentalHub.Domain.Models.Instrumento", b =>
+                {
+                    b.HasOne("InstrumentalHub.Domain.InstrumentoCategoria", "Categoria")
+                        .WithMany()
+                        .HasForeignKey("CategoriaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Categoria");
                 });
 
             modelBuilder.Entity("Volo.Abp.AuditLogging.AuditLogAction", b =>

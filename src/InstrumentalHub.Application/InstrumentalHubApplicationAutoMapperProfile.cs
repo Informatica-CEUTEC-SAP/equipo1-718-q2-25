@@ -1,4 +1,6 @@
 using AutoMapper;
+using InstrumentalHub.Domain.Models;
+using InstrumentalHub.Application.Contracts.Dtos;
 
 namespace InstrumentalHub;
 
@@ -6,8 +8,8 @@ public class InstrumentalHubApplicationAutoMapperProfile : Profile
 {
     public InstrumentalHubApplicationAutoMapperProfile()
     {
-        /* You can configure your AutoMapper mapping configuration here.
-         * Alternatively, you can split your mapping configurations
-         * into multiple profile classes for a better organization. */
+        // Mapeos para Instrumento
+        CreateMap<Instrumento, InstrumentoDto>();
+        CreateMap<CreateUpdateInstrumentoDto, Instrumento>();
     }
 }
