@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\InstrumentalHub.Domain.Shared\InstrumentalHub.Domain.Shared.csproj" />
+    <ProjectReference Include="..\InstrumentalHub.Domain\InstrumentalHub.Domain.csproj" />
   </ItemGroup>
   
   <ItemGroup>

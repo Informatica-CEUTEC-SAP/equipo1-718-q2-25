@@ -1,5 +1,6 @@
 ﻿using InstrumentalHub.Localization;
 using Volo.Abp.Application.Services;
+using InstrumentalHub.Domain;
 
 namespace InstrumentalHub;
 
