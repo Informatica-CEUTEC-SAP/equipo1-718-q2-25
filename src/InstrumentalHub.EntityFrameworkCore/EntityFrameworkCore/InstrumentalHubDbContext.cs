@@ -19,6 +19,7 @@ using Volo.CmsKit.EntityFrameworkCore;
 
 
 namespace InstrumentalHub.EntityFrameworkCore;
+using InstrumentalHub.Domain.Models;
 
 [ReplaceDbContext(typeof(IIdentityDbContext))]
 [ReplaceDbContext(typeof(ITenantManagementDbContext))]
@@ -29,6 +30,7 @@ public class InstrumentalHubDbContext :
     IIdentityDbContext
 {
     public DbSet<InstrumentoCategoria> InstrumentoCategorias { get; set; }
+    public DbSet<Instrumento>Instrumentos { get; set; }
 
 
     #region Entities from the modules
