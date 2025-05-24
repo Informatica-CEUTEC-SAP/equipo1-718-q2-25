@@ -20,36 +20,41 @@ public class CategoriaService: ApplicationService, ICategoriaService
     
     //Métodos segun el contrato
 
-    public async Task<List<InstrumentoCategoriaDto>> GetListAsync()
+    public async Task<List<RequestYResponse.InstrumentoCategoriaResponse>> GetListAsync()
     {
-        var instrumentoCategoria = await _instrumentoCategoriaRepository.GetListAsync();
-        return ObjectMapper.Map<List<InstrumentoCategoria>, List<InstrumentoCategoriaDto>>(instrumentoCategoria);
+        var categorias = await _instrumentoCategoriaRepository.GetListAsync();
+        return ObjectMapper.Map<List<InstrumentoCategoria>, List<RequestYResponse.InstrumentoCategoriaResponse>>(categorias);
     }
 
-    public async Task<InstrumentoCategoriaDto> GetAsync(Guid id)
+    public async Task<RequestYResponse.InstrumentoCategoriaResponse> GetAsync(Guid id)
     {
-        var item = await _instrumentoCategoriaRepository.GetAsync(id);
-        return ObjectMapper.Map<InstrumentoCategoria, InstrumentoCategoriaDto>(item);
-        
+        var categoria = await _instrumentoCategoriaRepository.GetAsync(id);
+        return ObjectMapper.Map<InstrumentoCategoria, RequestYResponse.InstrumentoCategoriaResponse>(categoria);
     }
-    
-    public async Task<InstrumentoCategoriaDto> CreateAsync(CreateUpdateInstrumentoCategoriaDto input)
+
+    public async Task<RequestYResponse.InstrumentoCategoriaResponse> CreateAsync(RequestYResponse.CreateInstrumentoCategoriaRequest request)
     {
-        var item = ObjectMapper.Map<CreateUpdateInstrumentoCategoriaDto, InstrumentoCategoria>(input);
-        item = await _instrumentoCategoriaRepository.InsertAsync(item);
-        return ObjectMapper.Map<InstrumentoCategoria, InstrumentoCategoriaDto>(item);
+        var categoria = new InstrumentoCategoria
+        {
+            Nombre = request.Nombre
+        };
+
+        categoria = await _instrumentoCategoriaRepository.InsertAsync(categoria);
+        return ObjectMapper.Map<InstrumentoCategoria, RequestYResponse.InstrumentoCategoriaResponse>(categoria);
     }
-    
-    public async Task<InstrumentoCategoriaDto> UpdateAsync(Guid id, CreateUpdateInstrumentoCategoriaDto input)
+
+    public async Task<RequestYResponse.InstrumentoCategoriaResponse> UpdateAsync(RequestYResponse.UpdateInstrumentoCategoriaRequest request)
     {
-        var item = await _instrumentoCategoriaRepository.GetAsync(id);
-        ObjectMapper.Map(input, item);
-        item = await _instrumentoCategoriaRepository.UpdateAsync(item);
-        return ObjectMapper.Map<InstrumentoCategoria, InstrumentoCategoriaDto>(item);
+        var categoria = await _instrumentoCategoriaRepository.GetAsync(request.Id);
+        categoria.Nombre = request.Nombre;
+
+        await _instrumentoCategoriaRepository.UpdateAsync(categoria);
+        return ObjectMapper.Map<InstrumentoCategoria, RequestYResponse.InstrumentoCategoriaResponse>(categoria);
     }
-    
+
     public async Task DeleteAsync(Guid id)
     {
         await _instrumentoCategoriaRepository.DeleteAsync(id);
     }
 }
+    
