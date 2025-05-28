@@ -9,7 +9,7 @@ namespace InstrumentalHub.Application.Contracts
         InstrumentoDto,
         Guid,
         PagedAndSortedResultRequestDto,
-        CreateUpdateInstrumentoDto>
+        CreateUpdateInstrumentoRequest>
     {
     }
 }

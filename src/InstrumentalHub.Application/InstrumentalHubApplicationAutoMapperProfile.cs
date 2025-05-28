@@ -10,6 +10,6 @@ public class InstrumentalHubApplicationAutoMapperProfile : Profile
     {
         // Mapeos para Instrumento
         CreateMap<Instrumento, InstrumentoDto>();
-        CreateMap<CreateUpdateInstrumentoDto, Instrumento>();
+        CreateMap<CreateUpdateInstrumentoRequest, Instrumento>();
     }
 }
