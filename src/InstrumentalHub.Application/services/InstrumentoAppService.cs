@@ -13,7 +13,7 @@ namespace InstrumentalHub.Application.Contracts
             InstrumentoDto,                // El DTO para exponer datos
             Guid,                          // Tipo de la llave primaria
             PagedAndSortedResultRequestDto,// Filtro de paginación y ordenamiento
-            CreateUpdateInstrumentoDto     // DTO para crear/actualizar
+            CreateUpdateInstrumentoRequest     // DTO para crear/actualizar
         >, 
         IInstrumentoAppService            // Implementa tu interfaz
     {
